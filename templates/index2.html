@@ -1,0 +1,474 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV Landing Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+<body>
+    
+    <!--==================================================================
+                           Header Section Start
+    ====================================================================-->
+    
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <a href="/"> <h2>logo</h2></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="language-selection">
+                        <select name="language" id="my-select" class="form-control" id="language">
+                            <option value="FR">French</option>
+                            <option value="EN">English</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--==================================================================
+                           Hero Section Start
+    ====================================================================-->
+
+
+    <section id="hero-area">
+        <div class="home-img">
+            <img src="{% static 'assets/images/home.png' %}" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-content">
+                        <h4>Ne perds pas ton temps</h4> 
+                        <p>Appliquer <span> 10X plus vite et mieux <br> 1, 000 experts de RH en un clic  </span> en un clic</p>
+                        <h3>Nous savons ce que vous souhaitez : </h3>
+                        <h2><strong> Votre travail</strong>  immédiatement, n'est-ce pas ?</h2>
+                        <a href="#" style="padding:5%;">Commencez maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================================================
+                           Job description Section Start
+    ====================================================================-->
+
+    <section id="job-description" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Résumé de la description de poste</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <form id="job_desc_form" action="{% url 'coreapp:index' %}" method="POST" onsubmit="return validateForm('job_desc_form')">
+                        {% csrf_token %}
+                        <input type="hidden" name="lang" value="FR">
+                        <div class="job-description-content">
+                            <h3>Veuillez insérer la longue description du poste et obtenir une version plus courte.</h3>
+                            <textarea id="job_desc_form1" class="decs" name="job_desc" placeholder="Description du poste" required></textarea>
+                            <p>Cliquez sur le bouton Résumer pour générer un résumé de la description de poste
+                                <button {% if request.session.email_verify %} {% else %} data-bs-toggle="modal" data-bs-target="#myModal"  {% endif %} onclick="form_submit('job_desc_form')" type="submit" class="submit-btn">Résumer</button>
+                            </p>
+                       </div>
+                    </form>
+                </div>
+            </div>
+            
+            {% if summary %}        
+            <div class="row">
+                <div class="col-12">
+                    <div class="buttom-area">
+                        <div class="text-area">
+                            <textarea id="summaryText" rows="8"> {{ summary }} </textarea>
+                        </div>                            
+                        <div class="text-button">
+                            <a href="#">Télécharger en tant que</a>
+                            <form action="{% url 'coreapp:generate_word' %}" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" value="{{summary}}" name="content" />
+                                <button>Word</button>
+                            </form>
+                                <button onclick="downloadAsPDF('summaryText')" >PDF</button>
+                            <div class="copy-text">
+                                <i class="fa-regular fa-copy"></i>
+                                <p onclick="copyToClipboard('summaryText')">Copier dans le presse-papier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+    <!--==================================================================
+                           Job Application Section Start
+    ====================================================================-->
+
+    <section id="job-application" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Correspondance d'application</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="job-application-content">
+
+                        <form id="job_match_form" method="POST" enctype="multipart/form-data"  onsubmit="return validateForm('job_match_form')" >
+                            {% csrf_token %}
+                            <input type="hidden" name="lang" value="FR">
+                            <h3>Veuillez télécharger votre CV au format Word ou PDF</h3>
+                            
+                            <input onchange="showFileName1()" type="file" id="file" name="cv_for_match" placeholder="Joindre votre CV" required />
+
+                            <label id='filelabel1' for="file">Joindre votre CV <span><i class="fa-solid fa-paperclip"></i></span></label>
+                            <h3>PVeuillez insérer le texte de la description du poste</h3>
+                        
+                            <textarea name="job_desc_match" id="job_match_form1" class="decs" placeholder="Description du poste" required></textarea>
+                            <p>Cliquez sur le bouton calculer la correspondance pour analyser la correspondance entre le CV et la description de poste
+                                <button style="width: 800px;" {% if request.session.email_verify %} {% else %} data-bs-toggle="modal" data-bs-target="#myModal"  {% endif %} onclick="form_submit('job_match_form')"  type="submit" class="submit-btn submit-btn2">Calculer la correspondance d'emploi</button>
+                            </p>
+                        </form>
+                   </div>
+
+                </div>
+            </div>
+
+            
+            {% if percentage_result %}
+                        
+            <div class="row">
+                <div class="col-12">
+                    <div class="application-bottom">
+                        <h2>Le pourcentage de correspondance est: {{ percentage_result }} %</h2>
+                        <p>{{ application_result_text }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+
+    <!--==================================================================
+                           Cover letter Section Start
+    ====================================================================-->
+
+    <section id="cover-letter" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Rédigez votre lettre de motivation personnelle</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+       
+                    <div class="cover-letter-content">
+
+                        <form onsubmit="return validateForm()" id="cv_cover" method="POST" action='/' enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input type="hidden" name="lang" value="FR">
+                        <h3>Veuillez télécharger votre CV en format Word ou PDF</h3>
+                        <input onchange="showFileName2()" type="file" id="file2" name="cv_for_cover" value="{{ cv_file }}" placeholder="Joindre votre CV" required />
+                        <label value="{{ cv_file }}" id='filelabel2' for="file2">Joindre votre CV <span><i class="fa-solid fa-paperclip"></i></span></label>
+                        <h3>Veuillez insérer le texte de la description du poste</h3>
+                        <textarea class="decs" name="job_desc_cover" id="jod_desc_cover" placeholder="Description de l'emploi" required>{{ job_content }}</textarea>
+
+                        <p>Cliquez sur le bouton Générer pour créer une lettre de motivation
+                            {% if job_content %}
+                            <input type="hidden" name="cv_content" value="{{cv_content}}" />
+                                <button data-bs-toggle="modal" data-bs-target="#myModal" id="cv_cover1" onclick="form_submit('cv_cover')" class="submit-btn">Regenerate</button>
+                            {% else %}
+                                <button data-bs-toggle="modal" data-bs-target="#myModal" id="cv_cover1" onclick="form_submit('cv_cover')" class="submit-btn submit-btn3">Générer</button>
+                            {% endif %}
+                        </p>
+
+                    </form>
+                   </div>
+
+                </div>
+            </div>
+
+            
+            {% if cover_letter %}
+              <div class="row">
+                <div class="col-12">
+                    <div class="buttom-area">
+                        <div class="text-area">
+                            <textarea id="coverText" rows="8"> {{ cover_letter }} </textarea>
+                        </div>
+                        <div class="text-button">
+                            <a href="#">Download as</a>
+                            <form action="{% url 'coreapp:generate_word' %}" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" value="{{summary}}" name="content" />
+                                <button>Word</button>
+                            </form>
+                                <button onclick="downloadAsPDF('coverText')" >PDF</button>
+                            <div class="copy-text">
+                                <i class="fa-regular fa-copy"></i>
+                                <p onclick="copyToClipboard('coverText')">Télécharger en tant que</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </section>
+
+
+{% if request.session.email_verify %}
+{% else %}
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Verify Email</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3" id="emailInputContainer">
+                <input id="emailAddress" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+            </div>
+
+            
+            <div id="otpInputContainer" style="display: none;">
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" id="otpInput" aria-describedby="otpHelp" maxlength="4" placeholder="Enter OTP">
+                </div>
+            </div>   
+            
+            <p id="ErrorMsg" class="text-danger">  </p>
+            <div style="display: none;" id="loading" class="spinner-border text-primary" role="status">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="sendOTPBtn">Send OTP</button>
+            <button type="button" class="btn btn-primary" style="display: none;" id="otpSubmitBtn">Submit</button>
+        </div>
+
+
+    </div>
+    </div>
+</div>
+{% endif %}
+
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+<script>
+
+$(document).ready(function() {
+        $('#my-select').change(function() {
+            var selected_option = $(this).val();
+            var newUrl = '/?lang=' + selected_option;
+            location.href = newUrl;
+        });
+});
+
+function form_submit(form_id){
+        const form = document.getElementById(form_id);
+        const submitBtn = document.getElementById(form_id+1)
+
+         {% if request.session.email_verify == "True" %}
+            let chk =  validInputCehck(form_id)
+            if(chk){
+                form.submit();
+            }
+        {% else %}
+        
+        var emailInputContainer = document.getElementById("emailInputContainer");
+        // Get the send OTP button
+        var sendOTPBtn = document.getElementById("sendOTPBtn");
+
+        // Get the OTP input container
+        var otpInputContainer = document.getElementById("otpInputContainer");
+
+        // Get the OTP submit button
+        var otpSubmitBtn = document.getElementById("otpSubmitBtn");
+
+        var myModal = document.getElementById("myModal")
+        var ErrorMsg = document.getElementById("ErrorMsg");
+        ErrorMsg.innerText = '';
+        
+        var loading = document.getElementById("loading");
+
+        sendOTPBtn.addEventListener('click', function() {
+            var emailInput = document.getElementById("emailAddress");
+            var emailValue = emailInput.value.trim();
+
+            if (emailValue.length == 0) {
+                ErrorMsg.innerText = "Please enter an email address."
+                return;
+            }
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(emailValue)) {
+                ErrorMsg.innerText = "Please enter a valid email address."
+                return;
+            }
+            var formData={"email":emailValue}
+            loading.style.display = "block";
+            emailInputContainer.style.display = "none";
+            sendOTPBtn.style.display = "none";
+            ErrorMsg.innerText = '';
+
+            $.ajax({
+            url: 'email_verify/',
+            type: 'post',
+            data: formData,
+            success: function(response) {
+                loading.style.display = "none";
+                otpInputContainer.style.display = "block";
+                otpSubmitBtn.style.display = "block";
+                ErrorMsg.innerText = '';
+            },
+            error: function (error){
+                loading.style.display = "none";
+                emailInputContainer.style.display = "block";
+                sendOTPBtn.style.display = "block";
+                ErrorMsg.innerText = "Somthing went wrong!!! Please try again"
+                return;
+            }
+        });
+    });
+        // Dispose the modal when the OTP submit button is clicked
+        otpSubmitBtn.addEventListener('click', function() {
+            var otp = document.getElementById("otpInput");
+            var otpValue = otp.value.trim();
+            if (otpValue.length == 0) {
+                ErrorMsg.innerText = "Please enter an otp code."
+                return;
+            }
+            var formData2={"otp":otpValue}
+            loading.style.display = "block";
+            ErrorMsg.innerText = '';
+
+            $.ajax({
+            url: 'email_verify/',
+            type: 'post',
+            data: formData2,
+            success: function(response) {
+                loading.style.display = "none";
+                ErrorMsg.innerText = '';
+                myModal.style.display = "none";
+                form.submit();
+            },
+            error: function (error){
+                loading.style.display = "none";
+                ErrorMsg.innerText = "Please enter an valid otp code."
+                return;
+            }
+            });
+        });
+  {% endif %}
+    
+}
+
+function validateForm(input1) {
+    {% if request.session.email_verify == "True" %}
+        // display none modal
+        validInputCehck(input1)
+        return false;
+    {% else %}
+        return false;
+    {% endif %}
+  }
+
+  function validInputCehck(input1){
+    var inputValue1 = document.getElementById(input1+1)
+    var fileInput = document.getElementById(input1+2);
+
+    if (inputValue1.value === '') {
+        return false;
+    }
+
+    if (fileInput.files && fileInput.files.length > 0) {
+        return true
+    } else {
+        return false
+    }
+
+
+    return true;
+  }
+
+
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  
+
+        function showFileName2() {
+            var input = document.getElementById('file2');
+            var fileName = input.files[0].name;
+            var fileLabel = document.getElementById('filelabel2');
+            fileLabel.innerHTML = fileName;
+        }
+
+        function showFileName1() {
+          var input = document.getElementById('file');
+          var fileName = input.files[0].name;
+          var fileLabel = document.getElementById('filelabel1');
+          fileLabel.innerHTML = fileName;
+        }
+
+
+        function copyToClipboard(name) {
+            var textarea = document.getElementById(name);
+            textarea.select();
+            document.execCommand("copy");
+        }
+        
+        function downloadAsPDF(name) {
+            var textarea = document.getElementById(name);
+            var doc = new jsPDF();
+          
+            var text = textarea.value;
+            var textLines = doc.splitTextToSize(text, 180); // split text into lines of maximum width 180 pixels
+          
+            doc.text(textLines, 10, 10); // display each line of text at position (10, 10)
+          
+            doc.save("myFile.pdf"); 
+          }
+ 
+        
+</script>
+
+
+        
+
+</body>
+</html>

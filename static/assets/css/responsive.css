@@ -1,0 +1,254 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	.job-application-content button{
+	    padding: 20px 25px;
+	    width: 750px;
+	}
+}
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.home-content h4{
+	    font-size: 22px;
+	    margin: 0;
+	}
+	.home-content p{
+	    font-size: 25px;
+   		margin-bottom: 20px;
+	}
+	.home-content p span{
+	    font-size: 22px;
+	}
+	.home-content h3{
+	    font-size: 18px;
+	}
+	.home-content h2{
+	    font-size: 28px;
+	}
+	.home-content{
+	    left: 5%;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	}
+
+	.home-content a{
+        padding: 30px 50px;
+	    width: 250px;
+	    height: 55px;
+	    font-size: 28px;
+	}
+	.job-description-content h3{
+	    font-size: 18px;
+	}
+
+	input[type="text"] {
+	    border-radius: 18px;
+	    padding: 30px 40px;
+	}
+	.job-description-content p{
+	    font-size: 15px;
+	}
+	.job-description-content button{
+        padding: 12px 40px;
+    	font-size: 25px;
+	}
+	.job-application-content h3{
+	    font-size: 25px;
+	}
+	label{
+	    padding: 23px 40px;
+	}
+	.job-application-content button{
+        padding: 20px 16px;
+	    font-size: 24px;
+	    width: 625px;
+	}
+	.job-application-content p{
+	    font-size: 15px;
+	}
+	#cover-letter .section-title h2{
+		font-size: 28px;
+	}
+}
+
+
+
+@media only screen and (max-width: 767px){
+	#header .logo{
+	    padding: 20px 0;
+	}
+	.section-title h2{
+		font-size: 30px;
+	}
+	.language-selection {
+	    margin: 30px;
+	}
+	.home-content h4{
+	    font-size: 20px;
+	    margin: 0;
+	}
+	.home-content p{
+	    font-size: 18px;
+	    margin: 0;
+	}
+	.home-content p span{
+	    font-size: 18px;
+	    margin-bottom: 5px;
+	}
+	.home-content h3{
+	    font-size: 25px;
+	    margin: 0;
+	}
+	.home-content h2{
+	    font-size: 22px;
+	    margin: 0;
+	}
+
+	.home-content a{
+        padding: 22px 43px;
+	    width: 220px;
+	    height: 50px;
+	    font-size: 25px;
+	}
+	input[type="text"] {
+	    padding: 30px 40px;
+	}
+	label{
+	    padding: 28px 40px;
+	}
+	textarea{
+		padding: 20px;
+	}
+	.job-description-content h3{
+	    font-size: 18px;
+	}
+	.job-description-content p, .job-application-content p, .cover-letter-content p {
+	    display: inline-block;
+	    font-size: 18px;
+        margin-top: -25px;
+	}
+	.job-description-content button{
+        padding: 2px 10px;
+    	font-size: 18px;
+	    display: inline-block;
+	    margin: 10px 0;
+	}
+	.text-button a{
+	    font-size: 12px;
+	}
+
+	.text-button button{
+	    padding: 3px 15px;
+    	font-size: 14px;
+    	margin: 0 5px;
+	}
+	.copy-text i{
+	    font-size: 15px;
+	    margin-right: 8px;
+	}
+	.copy-text p{
+	    font-size: 12px;
+	    margin-top: 10px;
+	}
+	.job-application-content button{
+	    padding: 8px 23px;
+	    font-size: 16px;
+	    display: inline-block;
+	    margin: 20px 0;
+	    width: 70%;
+	}
+	.application-bottom h2{
+	    font-size: 25px;
+	}
+	.application-bottom p{
+	    font-size: 15px;
+	}
+	.container h3{
+		font-size: 18px;
+	}
+	.cover-letter-content button{
+	    padding: 8px 40px;
+	    font-size: 25px;
+	    margin: 10px 0;
+	    display: block;
+	}
+
+	#cover-letter .section-title h2{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.container{
+	    padding: 0 20px;
+	}
+	.language-selection {
+	    margin: 30px;
+	}
+	.home-content h4{
+	    font-size: 15px;
+	}
+	.home-content p{
+	    font-size: 15px;
+	    margin-bottom: 0;
+	}
+	.home-content p span{
+	    font-size: 15px;
+	}
+	.home-content h3{
+	    font-size: 18px;
+	}
+	.home-content h2{
+	    font-size: 18px;
+	}
+	#hero-area img{
+	    min-height: 600px;
+	}
+
+	.home-content a{
+        padding: 19px 45px;
+	    width: 200px;
+	    height: 34px;
+	    font-size: 20px;
+	}
+	.home-content{
+	    left: 5%;
+	    top: 50%;
+	    transform: translate(0,-37%);
+	}
+	.job-description-content button{
+	    position: absolute;
+    	left: 15px;
+    	margin-top: 40px;
+	}
+	.text-button button{
+        padding: 0px 9px;
+	    font-size: 10px;
+	    margin: 0 4px;
+	}
+	.copy-text i{
+	    font-size: 12px;
+	    margin-right: 8px;
+	}
+	.copy-text p{
+	    font-size: 8px;
+	    margin-top: 15px;
+	}
+	.buttom-area{
+		margin-top: 80px;
+	}
+	.application-bottom {
+	    padding: 20px 0;
+	}
+	.application-bottom h2{
+	    font-size: 20px;
+	    padding: 10px 0;
+	}
+	.application-bottom p{
+	    font-size: 12px;
+	}
+	.cover-letter-content button{
+		position: absolute;
+    	left: 15px;
+    	margin-top: 20px;
+	}
+}

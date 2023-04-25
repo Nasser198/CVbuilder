@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/*
+=============================================================================
+>>>> color variable <<<<
+==============================================================================
+*/
+:root {
+    --primary-color: #0072B1;
+    --secondary-color: #E1E1E1;
+}
+/*
+=============================================================================
+DEFAULT STYLE START
+==============================================================================
+*/
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(233.04deg, #EDEDED 21.14%, #F7F7F7 56.25%, #F1F1F1 88.56%);
+}
+h1,h2,h3,h4,h5,h6,p,span,a,strong{
+    font-family: 'Inter', sans-serif;
+}
+.section-padding {
+    padding: 50px 0;
+}
+.inner-container-padding{
+    padding: 0 75px;
+    position: relative;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li a, ul li a:hover, ul li a:focus, a,a:hover,a:focus{
+text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.section-title h2{
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 186.52%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.container{
+    max-width: 1250px;
+    padding: 0 50px;
+}
+.section-padding{
+    padding: 50px 0;
+}
+
+
+/*
+===================================================================================
+===============================  FRONT PAGE STYLE START  ==========================
+===================================================================================
+ */
+
+
+#header .logo{
+    position: absolute;
+    padding: 50px 0;
+    z-index: 1;
+}
+#header .logo h2{
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 52px;
+    color: var(--primary-color);
+}
+.language-selection {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin: 60px 100px;
+}
+#language {
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+}
+
+#hero-area{
+    position: relative;
+}
+#hero-area img{
+    width: 100%;
+    min-height: 800px;
+}
+.home-content{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.home-content h4{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4C829B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.home-content p{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4C829B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.home-content p span{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.09em;
+    text-transform: capitalize;
+    color: #0072B1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.home-content h3{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4C829B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+}
+.home-content h2{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    margin-bottom: 30px;
+}
+
+.home-content a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 56px;
+    gap: 10px;
+    width: 307px;
+    height: 62px;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 54px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/*
+===================================================================================
+===============================  Job Description Section  =========================
+===================================================================================
+ */
+
+
+#job-description {
+    padding-bottom: 80px;
+}
+.job-description-content h3{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin: 50px auto;
+}
+.job-description-content p{
+    display: flex;
+    justify-content: space-between;
+}
+textarea {
+    background: #FFFFFF;
+    border: 1px solid var(--primary-color);
+    border-radius: 18px;
+    padding: 30px 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.text-area textarea{
+    border: none;
+}
+.buttom-area {
+    box-shadow: 5px 10px 8px #888888;
+    padding-bottom: 20px;
+    border-radius: 18px;
+}
+.text-button {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    position: relative;
+}
+
+.text-button .copy-text {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.text-button a{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #0072B1;
+}
+
+.text-button button{
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin: 0 20px;
+    border: none;
+}
+.copy-text i{
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.copy-text p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #0072B1;
+    margin-top: 10px;
+}
+
+.job-description-content textarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #898989;
+}
+.job-description-content button{
+    padding: 20px 50px;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+/*
+===================================================================================
+===============================  Job Application Section  =========================
+===================================================================================
+ */
+
+#job-application{
+    background: #fff;
+}
+.job-application-content h3{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+input[type="file"] {
+    display: none;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px 50px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 70px;
+    color: gray;
+}
+label span i{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+}
+.job-application-content button{
+    padding: 15px 0;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    margin-left: 20px;
+    width: 369px;
+}
+.job-application-content p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #898989;
+}
+.application-bottom {
+    padding: 100px 0;
+}
+.application-bottom h2{
+    font-weight: 700;
+    font-size: 45px;
+    background: linear-gradient(234.81deg, #E5E5E5 6.41%, #F7F7F7 55.08%, #E6E6E6 99.87%);
+    border-radius: 11px;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+.application-bottom p{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*
+===================================================================================
+===============================  Job Application Section  =========================
+===================================================================================
+ */
+
+.cover-letter-content h3{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+input[type="file"] {
+    display: none;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px 50px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 70px;
+    color: gray;
+}
+label span i{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 25px;
+}
+.cover-letter-content button{
+    padding: 20px 50px;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 20px;
+}
+.cover-letter-content p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #898989;
+}
+
+
+
