@@ -426,3 +426,58 @@ label span i{
 
 
 
+#update-cv{
+    background: #fff;
+}
+.update-cv-content h3{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+input[type="file"] {
+    display: none;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px 50px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 70px;
+    color: gray;
+}
+label span i{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+}
+.update-cv-content button{
+    padding: 15px 0;
+    background: linear-gradient(179.31deg, #0072B1 0.59%, #003857 99.41%);
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    margin-left: 20px;
+    width: 369px;
+}
+.update-cv-content p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #898989;
+}
+
