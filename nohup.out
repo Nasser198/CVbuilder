@@ -1,0 +1,583 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Error: You don't have permission to access that port.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Error: You don't have permission to access that port.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Error: You don't have permission to access that port.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2023 - 19:50:29
+Django version 4.2, using settings 'Resume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[27/Apr/2023 19:50:41] "GET / HTTP/1.1" 200 13793
+[27/Apr/2023 19:52:14] "GET / HTTP/1.1" 200 13793
+[27/Apr/2023 19:52:19] "GET /?lang=FR HTTP/1.1" 200 11238
+[27/Apr/2023 19:52:30] "GET /?lang=EN HTTP/1.1" 200 13793
+[27/Apr/2023 19:52:59] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+[27/Apr/2023 19:52:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[27/Apr/2023 19:52:59] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+[27/Apr/2023 19:52:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[27/Apr/2023 19:53:02] "GET / HTTP/1.1" 200 18432
+[27/Apr/2023 19:53:03] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[27/Apr/2023 19:53:03] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[27/Apr/2023 19:53:03] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[27/Apr/2023 19:53:03] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[27/Apr/2023 19:53:04] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[27/Apr/2023 19:53:04] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[27/Apr/2023 19:53:04] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:05] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:05] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:06] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 19:53:16] "GET /?lang=FR HTTP/1.1" 200 15832
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:17] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:18] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 19:53:24] "GET /?lang=EN HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:25] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:53:26] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 19:54:59] "POST /email_verify/ HTTP/1.1" 200 2
+5893
+[27/Apr/2023 19:55:37] "POST /email_verify/ HTTP/1.1" 200 2
+[27/Apr/2023 19:55:44] "POST / HTTP/1.1" 200 17787
+Not Found: /favicon.ico
+[27/Apr/2023 19:55:46] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:55:47] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 19:55:59] "POST /generate_word/ HTTP/1.1" 200 37510
+[27/Apr/2023 19:56:11] "GET /?lang=FR HTTP/1.1" 200 11238
+Not Found: /favicon.ico
+[27/Apr/2023 19:56:14] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 19:56:15] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 20:00:23] "GET /?lang=EN HTTP/1.1" 200 13793
+Not Found: /favicon.ico
+[27/Apr/2023 20:00:25] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[27/Apr/2023 20:00:26] "GET /favicon.ico HTTP/1.1" 404 2638
+[27/Apr/2023 21:24:13] "GET / HTTP/1.1" 200 18432
+[27/Apr/2023 22:13:40] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Þ[n\x8a\x9fj\\v\x98\x0f^\x92\x9ewÍ\x7f\x92ËÈyrwB«à1æ\x9dÞÕºM\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[27/Apr/2023 22:13:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[27/Apr/2023 23:30:14] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 00:24:56,415] - Broken pipe from ('167.94.146.58', 39864)
+[28/Apr/2023 00:24:57] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 00:24:57,463] - Broken pipe from ('167.94.146.58', 46080)
+[28/Apr/2023 00:24:57] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 00:24:57] code 505, message Invalid HTTP version (2.0)
+[28/Apr/2023 00:24:57] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[28/Apr/2023 00:24:57] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 02:20:35] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 02:20:45] code 400, message Bad request version ('À\x14À')
+[28/Apr/2023 02:20:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[28/Apr/2023 03:57:25] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 04:36:06] code 400, message Bad request version ('À(À$À\x14À')
+[28/Apr/2023 04:36:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[28/Apr/2023 07:45:37] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 07:48:09] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 07:48:10,122] - Broken pipe from ('216.218.206.112', 54679)
+Not Found: /favicon.ico
+[28/Apr/2023 07:48:50] "GET /favicon.ico HTTP/1.1" 404 2638
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /http:/api.ipify.org/
+[28/Apr/2023 07:49:12] "GET http://api.ipify.org/?format=json HTTP/1.1" 400 62868
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /www.shadowserver.org:443
+[28/Apr/2023 07:49:34] "CONNECT www.shadowserver.org:443 HTTP/1.1" 400 63070
+[28/Apr/2023 08:38:58] code 400, message Bad request syntax ('MGLNDD_13.53.46.133_8000')
+[28/Apr/2023 08:38:58] "MGLNDD_13.53.46.133_8000" 400 -
+[28/Apr/2023 13:58:50] "GET /?lang=EN HTTP/1.1" 200 18432
+[28/Apr/2023 13:58:50] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/css/style.css HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/css/responsive.css HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/js/custom.js HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 304 0
+[28/Apr/2023 13:58:51] "GET /static/assets/images/home.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[28/Apr/2023 13:58:52] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[28/Apr/2023 13:58:53] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[28/Apr/2023 13:58:54] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 14:00:15] "GET /?lang=FR HTTP/1.1" 200 15832
+Not Found: /favicon.ico
+[28/Apr/2023 14:00:16] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[28/Apr/2023 14:00:17] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 14:15:38,603] - Broken pipe from ('167.94.145.58', 37688)
+[28/Apr/2023 14:15:39] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 14:15:39,651] - Broken pipe from ('167.94.145.58', 44010)
+[28/Apr/2023 14:15:39] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 14:15:39] code 505, message Invalid HTTP version (2.0)
+[28/Apr/2023 14:15:39] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[28/Apr/2023 14:15:39] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[28/Apr/2023 14:46:34] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 16:54:42] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 17:17:29] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 18:54:34] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 18:54:35] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[28/Apr/2023 18:54:35] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[28/Apr/2023 18:54:35] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[28/Apr/2023 18:54:35] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[28/Apr/2023 18:54:35] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[28/Apr/2023 18:54:35,746] - Broken pipe from ('197.234.221.103', 35768)
+Not Found: /favicon.ico
+[28/Apr/2023 18:54:35] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 18:54:39] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 18:54:40] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[28/Apr/2023 18:54:40] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[28/Apr/2023 18:54:40] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+Not Found: /favicon.ico
+[28/Apr/2023 18:54:41] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 19:02:45,160] - Broken pipe from ('197.234.221.103', 35769)
+[28/Apr/2023 19:02:45,181] - Broken pipe from ('197.234.221.103', 35766)
+[28/Apr/2023 19:14:32] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:14:32] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[28/Apr/2023 19:14:32] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[28/Apr/2023 19:14:32] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[28/Apr/2023 19:14:33] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:14:34] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[28/Apr/2023 19:14:34] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[28/Apr/2023 19:14:34] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[28/Apr/2023 19:14:34] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[28/Apr/2023 19:14:34] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[28/Apr/2023 19:14:34] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[28/Apr/2023 19:14:34] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[28/Apr/2023 19:14:34] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[28/Apr/2023 19:14:35] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+[28/Apr/2023 19:14:35] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[28/Apr/2023 19:14:40] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[28/Apr/2023 19:14:41] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 19:15:19] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:32:16] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:32:17] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[28/Apr/2023 19:32:17] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[28/Apr/2023 19:32:17] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[28/Apr/2023 19:32:17] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[28/Apr/2023 19:32:18] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[28/Apr/2023 19:32:18] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[28/Apr/2023 19:32:19] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[28/Apr/2023 19:32:20] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 19:32:29] "GET /?lang=FR HTTP/1.1" 200 15832
+[28/Apr/2023 19:33:46] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:34:09] "GET /?lang=FR HTTP/1.1" 200 15832
+[28/Apr/2023 19:40:08,920] - Broken pipe from ('167.248.133.51', 57712)
+[28/Apr/2023 19:40:10] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:40:10,163] - Broken pipe from ('167.248.133.51', 50886)
+[28/Apr/2023 19:40:10] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 19:40:10] code 505, message Invalid HTTP version (2.0)
+[28/Apr/2023 19:40:10] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[28/Apr/2023 19:40:10] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 20:03:27] "GET / HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[28/Apr/2023 20:03:30] "GET /favicon.ico HTTP/1.1" 404 2638
+[28/Apr/2023 20:05:35] "POST /email_verify/ HTTP/1.1" 200 2
+4068
+[28/Apr/2023 20:06:49] "POST /email_verify/ HTTP/1.1" 200 2
+[28/Apr/2023 20:06:53] "POST / HTTP/1.1" 200 14114
+[28/Apr/2023 20:20:08] "POST / HTTP/1.1" 200 19404
+[28/Apr/2023 20:21:16] "POST /generate_word/ HTTP/1.1" 200 37987
+[28/Apr/2023 20:29:26] "POST / HTTP/1.1" 200 20304
+Invalid HTTP_HOST header: 'ip-api.com'. You may need to add 'ip-api.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-api.com'. You may need to add 'ip-api.com' to ALLOWED_HOSTS.
+Bad Request: /http:/ip-api.com/json/13.53.46.133
+[28/Apr/2023 21:25:47] "GET http://ip-api.com/json/13.53.46.133 HTTP/1.1" 400 62630
+[28/Apr/2023 22:40:00] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 22:40:15] code 400, message Bad request version ('À\x14À')
+[28/Apr/2023 22:40:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+----------------------------------------
+Exception occurred during processing of request from ('71.6.134.229', 59386)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/servers/basehttp.py", line 229, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/servers/basehttp.py", line 237, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 110] Connection timed out
+----------------------------------------
+[28/Apr/2023 23:48:34] code 400, message Bad request version ('À\x14À')
+[28/Apr/2023 23:48:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[28/Apr/2023 23:48:34] code 400, message Bad request version ('À\x14À')
+[28/Apr/2023 23:48:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[28/Apr/2023 23:48:35] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 23:48:35] code 400, message Bad request version ('À\x14À')
+[28/Apr/2023 23:48:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /api/islogged
+[28/Apr/2023 23:48:36] "GET /api/islogged HTTP/1.1" 404 2641
+[28/Apr/2023 23:49:30,944] - Broken pipe from ('162.142.125.223', 38068)
+[28/Apr/2023 23:49:32] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 23:49:32,171] - Broken pipe from ('162.142.125.223', 40782)
+[28/Apr/2023 23:49:32] "GET / HTTP/1.1" 200 18432
+[28/Apr/2023 23:49:32] code 505, message Invalid HTTP version (2.0)
+[28/Apr/2023 23:49:32] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[28/Apr/2023 23:49:32] "GET /favicon.ico HTTP/1.1" 404 2638
+[29/Apr/2023 00:23:12] "GET / HTTP/1.1" 200 18432
+[29/Apr/2023 00:23:12,393] - Broken pipe from ('64.62.197.185', 30517)
+Not Found: /favicon.ico
+[29/Apr/2023 00:23:32] "GET /favicon.ico HTTP/1.1" 404 2638
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /http:/api.ipify.org/
+[29/Apr/2023 00:23:37] "GET http://api.ipify.org/?format=json HTTP/1.1" 400 62866
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /www.shadowserver.org:443
+[29/Apr/2023 00:23:40] "CONNECT www.shadowserver.org:443 HTTP/1.1" 400 63069
+[29/Apr/2023 01:12:27] "GET / HTTP/1.1" 200 18432
+[29/Apr/2023 01:35:10] "GET / HTTP/1.0" 200 18432
+[29/Apr/2023 01:51:50] "GET / HTTP/1.1" 200 18432
+[29/Apr/2023 02:16:30] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x10rë\x94\x1b\x11dF\x14õ[YwO')
+[29/Apr/2023 02:16:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[29/Apr/2023 10:09:48,404] - Broken pipe from ('35.179.77.20', 21345)
+[29/Apr/2023 10:12:44,089] - Broken pipe from ('35.179.77.20', 21345)
+[29/Apr/2023 10:53:19,607] - Broken pipe from ('13.40.24.251', 21345)
+[29/Apr/2023 11:13:26,812] - Broken pipe from ('13.40.24.251', 21345)
+Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /device.rsp
+[29/Apr/2023 13:33:02] "GET /device.rsp?opt=user&cmd=list HTTP/1.0" 400 63043
+[29/Apr/2023 14:06:31] "GET / HTTP/1.1" 200 18432
+[29/Apr/2023 14:06:32] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[29/Apr/2023 14:06:32] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[29/Apr/2023 14:06:32] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[29/Apr/2023 14:06:32] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[29/Apr/2023 14:06:32] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[29/Apr/2023 14:06:32] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[29/Apr/2023 14:06:33] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[29/Apr/2023 14:06:34] "GET /favicon.ico HTTP/1.1" 404 2638
+[29/Apr/2023 16:04:08] code 400, message Bad request syntax ('MGLNDD_13.53.46.133_8000')
+[29/Apr/2023 16:04:08] "MGLNDD_13.53.46.133_8000" 400 -
+[29/Apr/2023 20:56:23] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ð´\x14')
+[29/Apr/2023 20:56:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[29/Apr/2023 22:15:02] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 02:57:06] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 02:57:06,730] - Broken pipe from ('184.105.139.106', 64583)
+Not Found: /favicon.ico
+[30/Apr/2023 02:57:46] "GET /favicon.ico HTTP/1.1" 404 2638
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /http:/api.ipify.org/
+[30/Apr/2023 02:58:08] "GET http://api.ipify.org/?format=json HTTP/1.1" 400 63017
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /www.shadowserver.org:443
+[30/Apr/2023 02:58:30] "CONNECT www.shadowserver.org:443 HTTP/1.1" 400 63220
+[30/Apr/2023 06:25:54] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 06:26:29] code 400, message Bad request version ('À\x14À')
+[30/Apr/2023 06:26:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[30/Apr/2023 06:34:46] code 400, message Bad request syntax ('\x16\x03\x01\x00u\x01\x00\x00q\x03\x03ÀÀÔ')
+[30/Apr/2023 06:34:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[30/Apr/2023 07:10:48] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 09:18:14] code 400, message Bad request version ('À\x14À')
+[30/Apr/2023 09:18:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[30/Apr/2023 09:53:26] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 09:53:28] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2023 09:53:28] "GET /static/assets/css/style.css HTTP/1.1" 304 0
+[30/Apr/2023 09:53:28] "GET /static/assets/css/responsive.css HTTP/1.1" 304 0
+[30/Apr/2023 09:53:28] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[30/Apr/2023 09:53:29] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 304 0
+[30/Apr/2023 09:53:29] "GET /static/assets/js/custom.js HTTP/1.1" 304 0
+[30/Apr/2023 09:53:29] "GET /static/assets/images/home.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[30/Apr/2023 09:53:34] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 10:49:51] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 10:49:51] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[30/Apr/2023 10:49:51] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[30/Apr/2023 10:49:51] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[30/Apr/2023 10:49:51] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+[30/Apr/2023 10:49:52] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[30/Apr/2023 10:49:52] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[30/Apr/2023 10:49:52] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[30/Apr/2023 10:49:52] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[30/Apr/2023 10:49:52] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[30/Apr/2023 10:49:54] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 10:50:13] "GET /?lang=FR HTTP/1.1" 200 15832
+[30/Apr/2023 10:50:13] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[30/Apr/2023 10:50:13] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[30/Apr/2023 11:28:15] "GET /?lang=FR HTTP/1.1" 200 15832
+[30/Apr/2023 11:30:29] "POST /email_verify/ HTTP/1.1" 200 2
+1920
+[30/Apr/2023 11:32:20] "POST /email_verify/ HTTP/1.1" 200 2
+[30/Apr/2023 11:32:24] "POST / HTTP/1.1" 200 14039
+[30/Apr/2023 11:32:39] "POST /generate_word/ HTTP/1.1" 200 37218
+[30/Apr/2023 11:34:36] "POST / HTTP/1.1" 200 15801
+[30/Apr/2023 11:36:37] "POST / HTTP/1.1" 200 11573
+[30/Apr/2023 11:37:46] "POST / HTTP/1.1" 200 24748
+[30/Apr/2023 11:37:59] "POST /generate_word/ HTTP/1.1" 200 36839
+[30/Apr/2023 12:02:08] "POST / HTTP/1.1" 200 22606
+[30/Apr/2023 12:02:13] "POST / HTTP/1.1" 200 22586
+[30/Apr/2023 12:02:17] "POST / HTTP/1.1" 200 22273
+[30/Apr/2023 12:05:02] "POST / HTTP/1.1" 200 11573
+[30/Apr/2023 12:06:48] "POST / HTTP/1.1" 200 14389
+[30/Apr/2023 12:11:41] "POST / HTTP/1.1" 200 11573
+[30/Apr/2023 12:47:28] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 12:47:29] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[30/Apr/2023 12:47:29] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[30/Apr/2023 12:47:29] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[30/Apr/2023 12:47:29] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[30/Apr/2023 12:47:29] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[30/Apr/2023 12:47:29] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[30/Apr/2023 12:47:29] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+Not Found: /favicon.ico
+[30/Apr/2023 12:47:31] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 13:03:44] "POST /email_verify/ HTTP/1.1" 200 2
+5339
+[30/Apr/2023 13:04:05] "POST /email_verify/ HTTP/1.1" 200 2
+[30/Apr/2023 13:04:09] "POST / HTTP/1.1" 200 16429
+[30/Apr/2023 13:04:51] "POST /generate_word/ HTTP/1.1" 200 37235
+[30/Apr/2023 13:10:14] "POST / HTTP/1.1" 200 14115
+[30/Apr/2023 13:13:09] "POST / HTTP/1.1" 200 25238
+[30/Apr/2023 13:14:12] "POST /generate_word/ HTTP/1.1" 200 38205
+[30/Apr/2023 13:19:16] "POST / HTTP/1.1" 200 23474
+[30/Apr/2023 13:19:18] "GET / HTTP/1.1" 200 13793
+[30/Apr/2023 13:20:01] "POST / HTTP/1.1" 200 24112
+[30/Apr/2023 13:24:46] "POST /generate_word/ HTTP/1.1" 200 38965
+[30/Apr/2023 19:54:33] "GET / HTTP/1.1" 200 18432
+[30/Apr/2023 19:54:34] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2023 19:54:34] "GET /static/assets/css/style.css HTTP/1.1" 304 0
+[30/Apr/2023 19:54:34] "GET /static/assets/css/responsive.css HTTP/1.1" 304 0
+[30/Apr/2023 19:54:34] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[30/Apr/2023 19:54:34] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 304 0
+[30/Apr/2023 19:54:34] "GET /static/assets/js/custom.js HTTP/1.1" 304 0
+[30/Apr/2023 19:54:35] "GET /static/assets/images/home.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[30/Apr/2023 19:54:37] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 19:54:37] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 19:54:39] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 20:26:13] "GET /?lang=FR HTTP/1.1" 200 15832
+Not Found: /favicon.ico
+[30/Apr/2023 20:26:15] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 20:26:16] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 20:27:30] "GET /?lang=EN HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[30/Apr/2023 20:27:31] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 20:27:32] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 20:41:19] "GET /?lang=FR HTTP/1.1" 200 15832
+Not Found: /favicon.ico
+[30/Apr/2023 20:41:23] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 20:41:24] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 20:45:51] "GET /?lang=EN HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[30/Apr/2023 20:45:52] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 20:45:54] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 20:46:06] "GET /?lang=FR HTTP/1.1" 200 15832
+Not Found: /favicon.ico
+[30/Apr/2023 20:46:07] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 20:46:08] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /robots.txt
+[30/Apr/2023 21:08:01] "GET /robots.txt HTTP/1.1" 404 2635
+[30/Apr/2023 21:08:01] "GET /?lang=FR HTTP/1.1" 200 15832
+[30/Apr/2023 21:08:02] "GET /?lang=FR HTTP/1.1" 200 15832
+[30/Apr/2023 21:08:02] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[30/Apr/2023 21:08:03] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[30/Apr/2023 21:08:03] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[30/Apr/2023 21:08:04] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[30/Apr/2023 21:08:05] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+[30/Apr/2023 21:08:05] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+[30/Apr/2023 21:08:05] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[30/Apr/2023 21:08:06] "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 194699
+[30/Apr/2023 21:08:06] "GET /static/assets/css/style.css HTTP/1.1" 200 10973
+[30/Apr/2023 21:08:07] "GET /static/assets/images/home.png HTTP/1.1" 200 798074
+[30/Apr/2023 21:08:07] "GET /static/assets/css/responsive.css HTTP/1.1" 200 4313
+[30/Apr/2023 21:08:08] "GET /static/assets/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[30/Apr/2023 21:08:08] "GET /static/assets/js/bootstrap.min.js HTTP/1.1" 200 60104
+[30/Apr/2023 21:08:09] "GET /static/assets/js/custom.js HTTP/1.1" 200 0
+Not Found: /favicon.ico
+[30/Apr/2023 21:08:12] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 21:14:25] "GET /?lang=EN HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[30/Apr/2023 21:14:26] "GET /favicon.ico HTTP/1.1" 404 2638
+Not Found: /favicon.ico
+[30/Apr/2023 21:14:28] "GET /favicon.ico HTTP/1.1" 404 2638
+[30/Apr/2023 23:10:31] code 400, message Bad request syntax ('MGLNDD_13.53.46.133_8000')
+[30/Apr/2023 23:10:31] "MGLNDD_13.53.46.133_8000" 400 -
+[01/May/2023 00:10:58] "GET / HTTP/1.1" 200 18432
+[01/May/2023 01:03:25] code 400, message Bad request version ('À\x14À')
+[01/May/2023 01:03:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[01/May/2023 01:03:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03"÷\x96fÏ7Ç²n\x9då"\x8f\x9dxÊ3\x06Ó¯\'\x12<\x12\x10ÑéÈUulÂ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[01/May/2023 01:03:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[01/May/2023 01:03:25] "GET / HTTP/1.1" 200 18432
+[01/May/2023 01:03:25] code 400, message Bad request version ('À\x14À')
+[01/May/2023 01:03:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /api/islogged
+[01/May/2023 01:03:26] "GET /api/islogged HTTP/1.1" 404 2641
+[01/May/2023 02:31:51] "GET / HTTP/1.1" 200 18432
+[01/May/2023 02:39:20] "GET / HTTP/1.1" 200 18432
+[01/May/2023 02:39:30] code 505, message Invalid HTTP version (2.0)
+[01/May/2023 02:39:30] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[01/May/2023 02:39:30] "GET /favicon.ico HTTP/1.1" 404 2638
+[01/May/2023 03:42:49] code 400, message Bad request version ('À(À$À\x14À')
+[01/May/2023 03:42:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[01/May/2023 03:59:42] "GET / HTTP/1.1" 200 18432
+[01/May/2023 07:49:32] "GET / HTTP/1.1" 200 18432
+[01/May/2023 07:49:32,542] - Broken pipe from ('74.82.47.21', 48475)
+Not Found: /favicon.ico
+[01/May/2023 07:50:12] "GET /favicon.ico HTTP/1.1" 404 2638
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /http:/api.ipify.org/
+[01/May/2023 07:50:34] "GET http://api.ipify.org/?format=json HTTP/1.1" 400 62880
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /www.shadowserver.org:443
+[01/May/2023 07:50:56] "CONNECT www.shadowserver.org:443 HTTP/1.1" 400 63083
+[01/May/2023 10:09:21] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[01/May/2023 10:09:21] "    c                           " 400 -
+Invalid HTTP_HOST header: 'ip-172-31-6-95.eu-north-1.compute.internal:8000'. You may need to add 'ip-172-31-6-95.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-6-95.eu-north-1.compute.internal:8000'. You may need to add 'ip-172-31-6-95.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /
+[01/May/2023 10:10:03] "GET / HTTP/1.0" 400 62810
+[01/May/2023 10:19:57] "GET / HTTP/1.1" 200 18432
+Not Found: /favicon.ico
+[01/May/2023 10:19:57] "GET /favicon.ico HTTP/1.1" 404 2638
+[01/May/2023 11:54:00,985] - Broken pipe from ('167.94.138.52', 49484)
+[01/May/2023 11:54:02] "GET / HTTP/1.1" 200 18432
+[01/May/2023 11:54:02,241] - Broken pipe from ('167.94.138.52', 46742)
+[01/May/2023 11:54:02] "GET / HTTP/1.1" 200 18432
+[01/May/2023 11:54:02] code 505, message Invalid HTTP version (2.0)
+[01/May/2023 11:54:02] "PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+[01/May/2023 11:54:02] "GET /favicon.ico HTTP/1.1" 404 2638
