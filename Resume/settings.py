@@ -28,7 +28,7 @@ OPENAI_API_KEY = "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"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.53.46.133']
 
 
 # Application definition
@@ -136,9 +136,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #for email
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST_USER = "heckcy@gmail.com"
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'support@jobdavis.com'
+EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = "cinyxvvovxicywuw"
+EMAIL_HOST_PASSWORD = 'QwewzCwepFXR'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

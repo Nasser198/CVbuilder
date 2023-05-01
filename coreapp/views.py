@@ -205,8 +205,10 @@ def email_verification(request):
                 e_message = EmailMessage(mail_subject, messsage, email_from, recipient_list)
                 e_message.content_subtype = 'html'
                 e_message.send()
+                
                 return HttpResponse("ok", status=200)
             except Exception as e:
+                print(e)
                 return HttpResponse("no", status=500)
 
         elif request.POST.get('otp'):
