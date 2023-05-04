@@ -17,7 +17,7 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from coreapp.models import WebsiteActions
+from coreapp.models import UserInformation, WebsiteActions
 
 import io
 from django.http import FileResponse
@@ -28,7 +28,7 @@ from docx import Document
 
 # Create your views here.
 def index(request):
-    openai.api_key = "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"
+    openai.api_key = "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"
     context = {}
 
     if request.method == 'POST':
@@ -92,6 +92,7 @@ def index(request):
                 WebsiteActions.objects.create(name="Cv Matching",counter = 1)
                 pass
 
+
         elif "cv_for_cover" in request.FILES.keys() or 'cv_content' in request.POST.keys():
             if "cv_for_cover" in request.FILES.keys():
                 cv_file = request.FILES['cv_for_cover']
@@ -126,6 +127,7 @@ def index(request):
             except:
                 WebsiteActions.objects.create(name="Cover Letter Generate",counter = 1)
 
+
         elif "cv_for_update" in request.FILES.keys():
             cv_file = request.FILES['cv_for_update']
             job_content = request.POST.get('job_desc_update')
@@ -159,7 +161,6 @@ def index(request):
                 WebsiteActions.objects.create(name="Cv Updating",counter = 1)
                 pass
 
-
     if request.GET.get('lang') == 'EN' or request.POST.get('lang') == 'EN':
         return render(request, 'index.html',context)
     
@@ -167,15 +168,6 @@ def index(request):
         return render(request, 'index2.html',context)
     return render(request, 'index.html',context)
 
-# def generate_pdf(request):
-#     text = request.POST.get('content')
-#     buffer = io.BytesIO()
-#     p = canvas.Canvas(buffer)
-#     p.drawString(100, 700, text)
-#     p.showPage()
-#     p.save()
-#     buffer.seek(0)
-#     return FileResponse(buffer, as_attachment=True, filename='job_description.pdf')
 
 def generate_word(request):
     document = Document()
@@ -202,17 +194,16 @@ def email_verification(request):
                 })
                 email_from = settings.EMAIL_HOST_USER
                 recipient_list = [request.POST.get('email'), ]
+                user, created = UserInformation.objects.get_or_create(email=recipient_list[0])
                 e_message = EmailMessage(mail_subject, messsage, email_from, recipient_list)
                 e_message.content_subtype = 'html'
                 e_message.send()
                 
                 return HttpResponse("ok", status=200)
             except Exception as e:
-                print(e)
                 return HttpResponse("no", status=500)
 
         elif request.POST.get('otp'):
-            print(request.session['otp'])
             if request.POST.get('otp') == request.session['otp']:
                 del request.session['email']
                 del request.session['otp']

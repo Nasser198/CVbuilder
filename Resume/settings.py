@@ -28,7 +28,7 @@ OPENAI_API_KEY = "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"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.53.46.133']
+ALLOWED_HOSTS = ['13.53.46.133', '*']
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'coreapp'
+    'coreapp',
+
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'coreapp.middleware.RequestMiddleware',
+
+
 ]
 
 ROOT_URLCONF = 'Resume.urls'

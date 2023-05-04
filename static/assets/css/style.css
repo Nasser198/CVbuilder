@@ -105,6 +105,17 @@ img{
     top: 50%;
     transform: translate(0,-50%);
 }
+/*.home-content h4{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4C829B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}*/
+
 .home-content h4{
     font-weight: 600;
     font-size: 28px;
@@ -114,7 +125,13 @@ img{
     color: #4C829B;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    display: inline-block;
+    border-bottom: 5px solid yellow;
+    padding-bottom: 5px;
 }
+
+
+
 .home-content p{
     font-weight: 600;
     font-size: 28px;

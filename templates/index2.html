@@ -27,7 +27,7 @@
                 <div class="col-md-6">
                     <div class="language-selection">
                         <select name="language" id="my-select" class="form-control" id="language">
-                            <option value="FR">French</option>
+                            <option value="FR">Français</option>
                             <option value="EN">English</option>
                         </select>
                     </div>
@@ -49,11 +49,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="home-content">
-                        <h4>Ne perds pas ton temps</h4> 
-                        <p>Appliquer <span> 10X plus vite et mieux <br> 1, 000 experts de RH en un clic  </span> en un clic</p>
-                        <h3>Nous savons ce que vous souhaitez : </h3>
-                        <h2><strong> Votre travail</strong>  immédiatement, n'est-ce pas ?</h2>
-                        <a href="#" style="padding:5%;">Commencez maintenant</a>
+                        <h4>NE PERDEZ PAS VOTRE TEMPS</h4> 
+                        <p>POSTULEZ  <span> 10X PLUS VITE ET MIEUX <br> 1000 EXPERTS RH  </span>  EN 1 CLIC  </p>
+                        <h3>NOUS SAVONS CE QUE VOUS VOULEZ. </h3>
+                        <h2><strong> VOTRE JOB, </strong>   MAINTENANT. N'EST-CE PAS ?</h2>
+                        <a href="#update-cv" style="padding:5%;">Commencez maintenant</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2>Correspondance d'application</h2>
+                        <h2>CCORRESPONDANCE AU POSTE</h2>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         <form id="job_match_form" method="POST" enctype="multipart/form-data"  onsubmit="return validateForm('job_match_form')" >
                             {% csrf_token %}
                             <input type="hidden" name="lang" value="FR">
-                            <h3>Veuillez télécharger votre CV au format Word ou PDF</h3>
+                            <h3>Veuillez ajouter votre CV au Format Word ou PDF.</h3>
                             
                             <input onchange="showFileName1()" type="file" id="file" name="cv_for_match" placeholder="Joindre votre CV" required />
 
@@ -148,8 +148,7 @@
                             <h3>PVeuillez insérer le texte de la description du poste</h3>
                         
                             <textarea name="job_desc_match" id="job_match_form1" class="decs" placeholder="Description du poste" required></textarea>
-                            <p>Cliquez sur le bouton calculer la correspondance pour analyser la correspondance entre le CV et la description de poste
-                                <button style="width: 800px;" {% if request.session.email_verify %} {% else %} data-bs-toggle="modal" data-bs-target="#myModal"  {% endif %} onclick="form_submit('job_match_form')"  type="submit" class="submit-btn submit-btn2">Calculer la correspondance d'emploi</button>
+                            <p>Cliquez Sur Le Bouton Calculer La Correspondance Pour Analyser La Correspondance Entre Votre CV Et La Description De Poste<button style="width: 800px;" {% if request.session.email_verify %} {% else %} data-bs-toggle="modal" data-bs-target="#myModal"  {% endif %} onclick="form_submit('job_match_form')"  type="submit" class="submit-btn submit-btn2">Calculer la correspondance d'emploi</button>
                             </p>
                         </form>
                    </div>
@@ -244,6 +243,68 @@
 
         </div>
 
+    </section>
+    <section id="update-cv" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>METTRE Á JOUR VOTRE CV</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="update-cv-content">
+
+                        <form id="cv_update_form" method="POST" enctype="multipart/form-data"  onsubmit="return validateForm('cv_update_form')" >
+                            {% csrf_token %}
+                            <input type="hidden" name="lang" value="EN">
+                            <h3>Veuillez télécharger votre CV en format Word ou PDF</h3>
+                           
+                            <input onchange="showFileName3()" type="file" id="file3" name="cv_for_update" placeholder="Joindre votre CV" required />
+
+                            <label id='filelabel3' for="file3">Joindre votre CV <span><i class="fa-solid fa-paperclip"></i></span></label>
+                            <h3>PVeuillez insérer le texte de la description du poste</h3>
+                        
+                            <textarea name="job_desc_update" id="cv_update_form1" class="decs" placeholder="Description de l'emploi" required></textarea>
+                            <p>Cliquer sur Mettre á Jour pour Mettre á jour votre CV.
+                                <button {% if request.session.email_verify %} {% else %} data-bs-toggle="modal" data-bs-target="#myModal"  {% endif %} onclick="form_submit('cv_update_form')"  type="submit" class="submit-btn submit-btn4">Mettre à jour Votre CV</button>
+                            </p>
+                        </form>
+                   </div>
+
+                </div>
+            </div>
+
+                                    
+            {% if output %}
+              <div class="row">
+                <div class="col-12">
+                    <div class="buttom-area">
+                        <div class="text-area">
+                            <textarea id="updateText" rows="8"> {{ output }} </textarea>
+                        </div>
+                        <div class="text-button">
+                            <a href="#">Download as</a>
+                            <form action="{% url 'coreapp:generate_word' %}" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" value="{{output}}" name="content" />
+                                <button>Word</button>
+                            </form>
+                                <button onclick="downloadAsPDF('updateText')" >PDF</button>
+                            <div class="copy-text">
+                                <i class="fa-regular fa-copy"></i>
+                                <p onclick="copyToClipboard('updateText')">Copy to clipboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
     </section>
 
 
