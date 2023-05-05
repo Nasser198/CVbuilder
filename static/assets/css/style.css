@@ -13,10 +13,11 @@
 =============================================================================
 DEFAULT STYLE START
 ==============================================================================
+   background: linear-gradient(233.04deg, #EDEDED 21.14%, #F7F7F7 56.25%, #F1F1F1 88.56%);
 */
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(233.04deg, #EDEDED 21.14%, #F7F7F7 56.25%, #F1F1F1 88.56%);
+    background-color: white;
 }
 h1,h2,h3,h4,h5,h6,p,span,a,strong{
     font-family: 'Inter', sans-serif;
@@ -28,6 +29,7 @@ h1,h2,h3,h4,h5,h6,p,span,a,strong{
     padding: 0 75px;
     position: relative;
 }
+
 ul{
     margin: 0;
     padding: 0;
@@ -57,6 +59,8 @@ img{
 .container{
     max-width: 1250px;
     padding: 0 50px;
+    background-color: white;
+
 }
 .section-padding{
     padding: 50px 0;
@@ -70,17 +74,43 @@ img{
  */
 
 
-#header .logo{
+/
+
+#header .logo img{
+    width: 150px;
+    height: auto; 
+}
+.logo {
+    padding-top: 10px;
+}
+
+
+.home-img {
+    position: relative;
+
+}
+
+.start-now-button {
     position: absolute;
-    padding: 50px 0;
-    z-index: 1;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
-#header .logo h2{
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 52px;
-    color: var(--primary-color);
+
+.start-now-button a {
+    display: block;
+    padding: 5px 30px;
+    background-color: #0072b1;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 60px;
 }
+.start-now-button a:hover {
+  background-color: #2d85e3;
+}
+
 .language-selection {
     position: absolute;
     z-index: 1;

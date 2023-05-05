@@ -2,13 +2,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% verbatim %}
+<!-- Hotjar Tracking Code for Jobdavis -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3475951,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+{% endverbatim %}
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CV Landing Page</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-   <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="icon" href="{% static 'assets/images/mainlogo.png' %}" type="image/png">
+
 </head>
 <body>
     
@@ -21,7 +37,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="logo">
-                        <a href="/"> <h2>logo</h2></a>
+                        <a href="/"><img src="{% static 'assets/images/logo1.png' %}" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -43,20 +59,10 @@
 
     <section id="hero-area">
         <div class="home-img">
-            <img src="{% static 'assets/images/home.png' %}" alt="">
+            <img src="{% static 'assets/images/mf.png' %}" alt="">
+            <div class="start-now-button">
+            <a href="#cv_update_form" style="margin-top: 100px; font-size: 35px; padding: 0px 60px;" >Commencez<br>maintenant</a>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="home-content">
-                        <h4>NE PERDEZ PAS VOTRE TEMPS</h4> 
-                        <p>POSTULEZ  <span> 10X PLUS VITE ET MIEUX <br> 1000 EXPERTS RH  </span>  EN 1 CLIC  </p>
-                        <h3>NOUS SAVONS CE QUE VOUS VOULEZ. </h3>
-                        <h2><strong> VOTRE JOB, </strong>   MAINTENANT. N'EST-CE PAS ?</h2>
-                        <a href="#update-cv" style="padding:5%;">Commencez maintenant</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

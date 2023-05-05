@@ -57,6 +57,8 @@ img{
 .container{
     max-width: 1250px;
     padding: 0 50px;
+    background-color: white;
+
 }
 .section-padding{
     padding: 50px 0;
